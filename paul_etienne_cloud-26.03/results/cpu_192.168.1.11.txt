@@ -1,0 +1,4 @@
+
+%Cpu(s): 25.0 us, 38.5 sy,  0.0 ni, 36.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu(s): 25.0 us, 38.5 sy,  0.0 ni, 36.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+%Cpu(s): 25.0 us, 38.5 sy,  0.0 ni, 36.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
