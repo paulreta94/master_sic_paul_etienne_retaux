@@ -1,4 +1,0 @@
-
-MiB Mem :   1849.2 total,    316.0 free,    694.4 used,    838.9 buff/cache
-MiB Mem :   1849.2 total,    316.0 free,    694.4 used,    838.9 buff/cache
-MiB Mem :   1849.2 total,    316.0 free,    694.4 used,    838.9 buff/cache
