@@ -1,4 +1,4 @@
-Auteur : Paul-Etienne Rétaux
+Auteur : Paul-Etienne Rétaux\n
 Professeur : Monsieur Stéphane Zuckerman (laboratoire ETIS)
 Ce projet a été réalisé de septembre 2023 à mars 2024 dans le cadre du Master Systèmes Intelligents et Communicants proposé par l'ENSEA et la faculté de Cergy-Pontoise. 
 Le projet consiste à distribuer le calcul d'un NAS parallel benchmark (le Embarassingly Parallel classe S : https://www.nas.nasa.gov/software/npb.html ) sur deux Raspberry Pis en allouant à chacune un nombre de MPI
