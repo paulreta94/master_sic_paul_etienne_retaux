@@ -13,7 +13,7 @@ int main(void)
             }
             exit(EXIT_FAILURE);
         }
-        int position_test = 1; // slave
+        int position_test = 1; // position of slave
         int no_lines_test = 3;
     while (1)
     {      
