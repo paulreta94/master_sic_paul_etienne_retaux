@@ -19,8 +19,8 @@ myIP = socket.gethostbyname(myHostName)
 
 
 if (myIP == "192.168.1.1"):
-	file1 = open('/home/pi/paul_etienne_cloud/test_18_march_fork/cpu_statistics_master.txt', 'r')
-	file2 = open('/home/pi/paul_etienne_cloud/test_18_march_fork/memory_statistics_master.txt', 'r')
+	file1 = open('/home/pi/paul_etienne_cloud/mosquitto_code/cpu_statistics_master.txt', 'r')
+	file2 = open('/home/pi/paul_etienne_cloud/mosquitto_code/memory_statistics_master.txt', 'r')
 elif (myIP == "192.168.1.11"): # pi1 : computation node
 	file1 = open('/home/pi/paul_etienne_cloud/results/cpu_192.168.1.11.txt', 'r')
 	file2 = open('/home/pi/paul_etienne_cloud/results/memory_192.168.1.11.txt', 'r')
@@ -75,17 +75,12 @@ mem_score = str(mem_sum/3)
 score = cpu_score + mem_score
 print("Score : {}".format(score))
 if myIP == "192.168.1.11":
-	# stats1 = open('/home/pi/paul_etienne_cloud/mosquitto-python-example/stats1.txt','r+')
 	msgs = [{'topic': "performances/pi1", 'payload': score}]
-	# stats1.write(score)
 
 elif myIP == "192.168.1.13":
-	# stats2 = open('/home/pi/paul_etienne_cloud/mosquitto-python-example/stats2.txt','r+')
 	msgs = [{'topic': "performances/pi2", 'payload': score}]
-	# stats2.write(score)
 
 
-# host = "localhost"
 master = "192.168.1.1"
 
 

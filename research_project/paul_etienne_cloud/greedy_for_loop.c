@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+/*This file is a "greedy task", which loads CPUs of every RPi with a load evolving during the time*/
 int main(void)
 {
     int rest_time = 1000000;

@@ -13,11 +13,14 @@ void ssh_handler(int node_ID)
         exit(EXIT_FAILURE);
     }
     strcat(path, "/nodes_file");
-
-    return 0;
+    fprintf(stdout, "Path to slave's executable : %s\n", path);
+    fprintf(stdout, "Node ID : %d\n", node_ID);
     // printf("Path to slave's executable : %s\n", path);
     if (node_ID == 1)
     {
+        fprintf(stdout, "SSH command for pi1\n");
+
+        // if (execlp("ssh", "ssh", "pi1", path, (char *)NULL) != 0)
         if (execlp("ssh", "ssh", "pi1", path, (char *)NULL) != 0)
         {
             printf("Failed to execute SSH opening session command for pi1\n");
@@ -26,6 +29,7 @@ void ssh_handler(int node_ID)
     }
     if (node_ID == 2)
     {
+        // if (execlp("ssh", "ssh", "pi2", path, (char *)NULL) != 0)
         if (execlp("ssh", "ssh", "pi2", path, (char *)NULL) != 0)
         {
             printf("Failed to execute SSH opening session command for pi2\n");
